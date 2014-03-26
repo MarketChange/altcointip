@@ -203,28 +203,28 @@ ftc:
         address: '([67][1-9a-z]{20,40})'
         units: '(ftc|feathercoin|feathercoins|Ƒ)'
 
-# Megacoin
-mec:
-    enabled: false
-    unit: mec
-    name: Megacoin
+# MarketChange
+chg:
+    enabled: true
+    unit: chg
+    name: MarketChange
     symbol: 'M'
-    config_file: '~/.megacoin/megacoin.conf'
+    config_file: '~/.marketchange/marketchange.conf'
     config_rpcserver: '127.0.0.1'
     minconf:
-        givetip: 4
-        withdraw: 576
+        givetip: 0.001
+        withdraw: 0.1
     txmin:
         givetip: 0.00000001
         withdraw: 0.05
     txfee: 0.01
     walletpassphrase: 'mypass1'
     explorer:
-        address: 'http://mega.rapta.net:2750/address/'
-        transaction: 'http://mega.rapta.net:2750/tx/'
+        address: 'http://chgexplorer.tk/chain/MarketChange/address/'
+        transaction: 'http://chgexplorer.tk/chain/MarketChange/tx/'
     regex:
         address: '(M[1-9a-z]{20,40})'
-        units: '(mec|megacoin|megacoins|MΣC)'
+        units: '(chg|marketchange|marketchange|CHG)'
 
 # Quarkcoin
 qrk:
